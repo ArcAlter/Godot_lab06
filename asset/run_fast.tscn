@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dn4jqwgsbb5pt"]
+
+[ext_resource type="PackedScene" uid="uid://ct0m40yixqoly" path="res://asset/Fast Run.tscn" id="1_eebxr"]
+
+[node name="runFast" type="Node3D"]
+
+[node name="Fast Run" parent="." instance=ExtResource("1_eebxr")]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://5xjubwie53pn"]
+
+[ext_resource type="Script" uid="uid://dfla8vf8cblc4" path="res://asset/test.gd" id="1_1bmra"]
+[ext_resource type="PackedScene" uid="uid://ct0m40yixqoly" path="res://asset/Fast Run.tscn" id="1_ufhiv"]
+[ext_resource type="PackedScene" uid="uid://u1mi6hsclvxs" path="res://asset/Walking.tscn" id="2_1bmra"]
+[ext_resource type="PackedScene" uid="uid://bfdtawgdi1h8u" path="res://asset/Zombie Stumbling.tscn" id="3_hx1b6"]
+
+[node name="test" type="Node3D"]
+script = ExtResource("1_1bmra")
+
+[node name="Fast Run" parent="." instance=ExtResource("1_ufhiv")]
+
+[node name="Walking" parent="." instance=ExtResource("2_1bmra")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="Zombie Stumbling" parent="." instance=ExtResource("3_hx1b6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.36964, 2.44243, 18.8301)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.94433, 0.328999, 0, -0.328999, 0.94433, 6.18726, 7.51015, -11.0939)

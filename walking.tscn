@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://kj0pinwil25e"]
+
+[ext_resource type="PackedScene" uid="uid://u1mi6hsclvxs" path="res://asset/Walking.tscn" id="1_iogg1"]
+
+[node name="walking" type="Node3D"]
+
+[node name="Walking" parent="." instance=ExtResource("1_iogg1")]
